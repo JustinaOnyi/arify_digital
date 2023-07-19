@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,6 +15,12 @@ class HomeScreen extends StatelessWidget {
             'Howdy, What are You\n Looking For 👁️',
             style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
           ),
+          Container(
+            child: SvgPicture.asset(
+              'assets/icons/cart.svg', 
+              width:20
+              ),
+            )
         ],
       ),
     );
