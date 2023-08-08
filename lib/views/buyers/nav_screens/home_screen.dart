@@ -1,3 +1,4 @@
+import 'package:arify_digital_store/views/buyers/nav_screens/widgets/search_input_widget.dart';
 import 'package:arify_digital_store/views/buyers/nav_screens/widgets/welcome_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -23,31 +24,3 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class SearchInputWidget extends StatelessWidget {
-  const SearchInputWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(10),
-      child: TextField(
-        decoration: InputDecoration(
-            fillColor: Colors.white,
-            filled: true,
-            hintText: 'Search for Products',
-            border: OutlineInputBorder(
-              borderSide: BorderSide.none,
-            ),
-            prefix: Padding(
-              padding: const EdgeInsets.all(14.0),
-              child: SvgPicture.asset(
-                'assets/icons/search.svg',
-                width: 20,
-              ),
-            )),
-      ),
-    );
-  }
-}
